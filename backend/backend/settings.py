@@ -53,7 +53,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = [
+    "https://user-management-system-wine-one.vercel.app/" ,
+]
 
 ROOT_URLCONF = 'backend.urls'
 
